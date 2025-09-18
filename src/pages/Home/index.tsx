@@ -80,7 +80,9 @@ export default function Home() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <button type="submit">Adicionar usuário</button>
+        <button className="custom-button" type="submit">
+          Adicionar usuário
+        </button>
       </form>
 
       <h2>Usuários cadastrados</h2>

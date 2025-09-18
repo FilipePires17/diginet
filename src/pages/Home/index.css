@@ -10,3 +10,10 @@ form {
   align-items: flex-start;
   gap: 10px;
 }
+
+.custom-button {
+  background-color: greenyellow;
+  color: blue;
+  border: none;
+  padding: 10px;
+}
