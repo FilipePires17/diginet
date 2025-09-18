@@ -1,0 +1,12 @@
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+}
+
+form {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
