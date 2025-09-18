@@ -10,7 +10,12 @@ export default function Home() {
   const fetchUsers = async () => {
     try {
       const response = await fetch(
-        "https://flask-tutorial-mc8m.onrender.com/users"
+        "https://flask-tutorial-mc8m.onrender.com/users",
+        {
+          method: "GET",
+          mode: "cors",
+          headers: { "Content-Type": "application/json" },
+        }
       );
 
       if (!response.ok) {
@@ -34,6 +39,7 @@ export default function Home() {
         "https://flask-tutorial-mc8m.onrender.com/users",
         {
           method: "POST",
+          mode: "cors",
           headers: {
             "Content-Type": "application/json",
           },
